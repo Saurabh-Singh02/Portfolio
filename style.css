@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #112827;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px solid #135740; */
+}
+.flex-box{
+    display: none;
+}
+.hamb, nav h1{
+    padding: .8rem;
+    margin: 0.2rem;
+}
+.hamb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hamb:hover{
+    background-color: #135740;
+}
+.hamb-items{
+    background-color: white;
+    margin: 0.1rem;
+    padding: .1rem;
+    height: .2rem;
+    width: 1.5rem;
+}
+.nav-items{
+    background-color: #112827;
+    text-align: center;
+    list-style: none;
+}
+.nav-items:hover a, .nav-items:focus a{
+    background-color: #135740;
+    border-radius: 2px;
+}
+.nav-items a{
+    padding: .5rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+    cursor: context-menu;
+}
+main{
+    position: relative;
+    min-height: 80vh;
+}
+#nav-content{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 100%;
+}
+body{
+    background-color: #060f0f;
+}
+.home,.about,.contact,.project{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0.5rem;
+    background-color: #131419;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home{
+    text-align: center;
+    font-size: 3rem;
+    align-items: center;
+}
+.profile{
+    background-color: #2b2929;
+    padding: 1rem;
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile img{
+    /* background-image: linear-gradient(125deg, #f3970c 0%, #f3970c 50%, black 50%, black 100%); */
+    background-image: url(/word-image-186242-8.webp);
+    max-width: 100%;
+    height: auto;
+    border: 5px double white;
+    border-radius: 40px;
+}
+.home p span, .about span, .contact span, .project span{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    padding: .3rem;
+}
+.bt-btnm{
+    color: white;
+    padding: 5px;
+    margin: .5rem;
+    height: 3rem;
+    width: 7rem;
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 1px white;
+}
+.bt-btnm a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.handles a{
+    display: inline-block;
+    font-weight:600;
+    font-size: .8rem;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    padding: 2rem;
+}
+.handles a svg{
+    color: white;
+    margin-right: 2px;
+}
+.about h2{
+    margin-bottom: 1rem;
+}
+.bt-btnm:hover{
+    background-color: #292929;
+    box-shadow: 0 0 4px 1px #c9c8c8;
+    cursor: pointer;
+}
+.project{
+    align-items: center;
+    font-size: 1.5rem;
+}
+.project img{
+    max-width: 90%;
+    margin: 1rem;
+    height: auto;
+    border-radius: 10px;
+}
+.about{
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0rem 1rem 0rem;
+    box-shadow: 0 0 8px 0 black;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: #2b2929;
+}
+.contact input, .contact textarea{
+    outline: none;
+    border-radius: 6px;
+    margin: 5px;    
+    padding: 8px;
+    background-color: #060f0f;
+    color: wheat;
+}
+.footer{
+    /* border-top: 2px solid #135740; */
+    color: white;
+    background-color: #060f0f;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 620px){
+    .flex-box{
+        display: flex;
+        align-items: center;
+    }
+    .hamb{
+        display: none;
+    }
+    .nav-items{
+        margin: .5rem;
+    }
+    .contact{
+        align-items: center;
+        padding: 3rem;
+    }
+    .cont{
+        width: 60vw;
+        height: auto;
+        padding: 2rem;
+    }
+}
+@media screen and (min-width: 920px){
+    .home,.about,.contact{
+        padding: 2rem;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+}
