@@ -116,8 +116,6 @@ body {
 }
 
 .profile img {
-    /* background-image: linear-gradient(125deg, #f3970c 0%, #f3970c 50%, black 50%, black 100%); */
-    /* background-image: url(/word-image-186242-8.webp); */
     max-width: 100%;
     height: auto;
     border: 5px double white;
